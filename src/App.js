@@ -12,11 +12,17 @@ function App() {
   
   return (
     <div className=" container mx-auto">
-      <div className="italic mx-auto text-6xl container bg-sky-600 p-10">Кафе</div>
-      <MainMenu />
-      <CartProvider>
+      <div className="flexbox italic text-6xl container bg-black text-yellow-600 p-4 columns-3">
+        <div className=" flex">Хотэй</div>
+        <div className="flex text-xl  text-rigth">8(902)533-59-00  </div>
+        <div className="flex text-xl  text-left box-border   ">10:00-23:00</div>  
+        <div className='text-xl'><CartProvider>
       <CartWidget />
-      </CartProvider>
+      </CartProvider> 
+      </div>                 
+          </div>
+      <MainMenu />
+     
 
       <Outlet ></Outlet>
 
