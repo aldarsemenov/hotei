@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const MainMenu =() =>{
     let menuItems= [
-        {title: "Главная", link : "/"},
+       
         {title: "О нac", link:"/about"}
 
     ]
