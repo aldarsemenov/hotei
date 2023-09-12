@@ -18,9 +18,9 @@ const Header = () => {
         // }
     return (
         
-        <div className=" text-xl mx-auto grid  w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  container flex  justify-items-center   mx-auto ">
+        <div className="h-16 text-xl mx-auto   w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  container flex   ">
             {headercategory.map((item) => (
-            <div className="hover:bg-orange-400 border-8 border-solid border-indigo-600 container text-center rounded-xl p-2 ">
+            <div className="text-2xl hover:bg-orange-400 border-8 border-solid border-indigo-600 container text-center rounded-xl p-2 ">
                 <Link to={`/catalog/${item.categ}`}>
                     {item.name}</Link> 
             </div>

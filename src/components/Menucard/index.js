@@ -23,7 +23,7 @@ const MenuCard = ({ item }) => {
             <Link to={`/catalog/${item.id}`}>
                 <div className={"text-2xl p-2 font-bold px-" + style.card}>{item?.attributes?.name}</div>
             </Link>
-            <div>{item?.attributes?.description}{filter}</div>
+            <div>{item?.attributes?.description}</div>
             <div >{ingrigients}</div>
             <div className="font-bold p-2 container flex flex-row-reverse text-right">Стоимость : {item?.attributes?.price + " руб"}</div>
 
