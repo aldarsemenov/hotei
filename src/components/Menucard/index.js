@@ -5,12 +5,14 @@ import { useDispatch } from "react-redux";
 
 const MenuCard = ({ item }) => {
     const dispatch = useDispatch();
-    console.log(item)
+    
     const ingrigients = (
         <div className="">{item.attributes.ingredients.join(", ")}</div>
     );
-
+    
+    
     return (
+       
         <div className="rounded overflow-hidden shadow-lg ">
             <img  
             src={
@@ -21,7 +23,7 @@ const MenuCard = ({ item }) => {
             <Link to={`/catalog/${item.id}`}>
                 <div className={"text-2xl p-2 font-bold px-" + style.card}>{item?.attributes?.name}</div>
             </Link>
-
+            <div>{item?.attributes?.description}{filter}</div>
             <div >{ingrigients}</div>
             <div className="font-bold p-2 container flex flex-row-reverse text-right">Стоимость : {item?.attributes?.price + " руб"}</div>
 
@@ -34,6 +36,7 @@ const MenuCard = ({ item }) => {
 
 
     );
+        
 };
 
 export default MenuCard;
