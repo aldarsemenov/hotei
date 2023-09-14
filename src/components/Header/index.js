@@ -10,6 +10,9 @@ const Header = () => {
       window.addEventListener('scroll',()=>{
         let scrollDistance= window.scrollY;
         console.log(scrollDistance)
+        if (scrollDistance>=90) {
+
+        }
       })
 
         // if (item.id==headercategory.id)
@@ -18,10 +21,12 @@ const Header = () => {
         // }
     return (
         
-        <div className=" text-xl mx-auto   w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  container flex   ">
+        <div className=" sticky top: text-xl mx-auto   w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  container flex   ">
             {headercategory.map((item) => (
             <div className="text-2xl hover:bg-orange-400 border-8 border-solid border-indigo-600 container text-center rounded-xl p-2 ">
                 <Link to={`/catalog/${item.categ}`}>
+                    
+
                     {item.name}</Link> 
             </div>
             ))
