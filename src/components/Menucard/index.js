@@ -12,8 +12,8 @@ const MenuCard = ({ item }) => {
     
     
     return (
-       
-        <div className="rounded overflow-hidden shadow-lg ">
+       <ul>
+        <li className="rounded overflow-hidden shadow-lg ">
             <img  
             src={
                 "http://localhost:1337" + 
@@ -27,12 +27,12 @@ const MenuCard = ({ item }) => {
             <div >{ingrigients}</div>
             <div className="font-bold p-2 container flex flex-row-reverse text-right">Стоимость : {item?.attributes?.price + " руб"}</div>
 
-            <button onClick={() => dispatch(addToCart(item))} class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button onClick={() => dispatch(addToCart(item))} class="w-full bg-blue-500 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded">
                 Добавить в корзину
             </button>
 
-        </div>
-
+        </li>
+        </ul>
 
 
     );

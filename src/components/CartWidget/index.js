@@ -7,12 +7,14 @@ import { Link } from "react-router-dom";
 const CartWidget = ({ cart, sum }) => {
     const dispatch = useDispatch();
     return (
-      <div className="mx-auto  container flex flex-row-reverse text-right">
+      <div className=" hover:bg-slate-700 transition container p-2    text-center   rounded-xl">
         <Link to ="/cart">
-          <div className="flex justify-end">
-            <CartIcon /> X {cart.items.length}
-          </div>
-          <div>Сумма: {sum} руб</div>
+        
+            {/* <CartIcon /> X {cart.items.length} */}
+            <div><CartIcon /> {sum} р</div>
+             
+         
+          {/* <div>Сумма: {sum} руб</div> */}
         </Link>
        
       </div>

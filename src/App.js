@@ -12,12 +12,14 @@ function App() {
 
 
   return (
-    <div className=" mx-auto container  ">
-      <div className="   text-xl  bg-black text-yellow-600 p-4 columns-2 rounded-xl">
-        <div className="text-4xl  text-left font-sans "><Link to ="/" >Суши-бар Хотэй</Link></div>
-        <div className=" text-right">+7 (902) 533-59-00</div>
-        <div className=" text-right">10:00-23:00</div>
+    
+    <div className="  w-full">
+      
+      <div className="h-60 presentation presentation:after  text-xl   text-yellow-600  ">
+        <div className="mx-6 text-5xl text-white w-56   "><Link to ="/" >Суши-бар Хотэй</Link></div>
+        
         </div>
+        
         <div >
           <Header/>
           {/* <CartProvider>
