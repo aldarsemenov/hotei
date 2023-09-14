@@ -19,5 +19,21 @@ export const headercategory = [
     name:"Запеченные роллы", 
     categ:"baked-roll"
 },
+{
+    id:5,
+    name:"Пицца", 
+    categ:"pizza"
+},
+{
+    id:4,
+    name:"Бургеры", 
+    categ:"burgers"
+},
+{
+    id:4,
+    name:"Горячие блюда ", 
+    categ:"hot-eat"
+},
+
 
 ]
