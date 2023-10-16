@@ -1,7 +1,7 @@
 import { useOutletContext } from "react-router-dom";
 import Menucard from "../../components/Menucard";
 import { useDispatch, useSelector } from "react-redux";
-import { loadMenu } from "../../store/slices/menuSlice";
+import { loadCategory, loadMenu } from "../../store/slices/menuSlice";
 import { useEffect } from "react";
 import LoadingError from "../../components/LoadingError";
 import Loading from "../../components/Loading";
@@ -16,6 +16,11 @@ const Menu = () => {
   useEffect(() => {
     dispatch(loadMenu())
   }, [])
+
+  // useEffect(() => {
+  //   dispatch(loadCategory())
+  // }, [])
+
   return (
     <>
       {menu.loading == "fulfilled" && (

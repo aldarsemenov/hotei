@@ -7,6 +7,10 @@ export const loadMenu = createAsyncThunk("menu/getMenu", async () => {
   return axios.get("http://localhost:1337/api/foods?populate=*").then((r) => r.data);
  
 });
+// export const loadCategory = createAsyncThunk("menu/getCategory", async () => {
+//   return axios.get("http://localhost:1337/api/category?populate=*").then((r) => console.log(r));
+ 
+// });
 
 export const menuSlice = createSlice({
   name: "menu",
